@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+    <title>Month Money Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="text-center mt-4 mb-4">
+        <h1>Calculate Expences!!</h1>
+        
+    </header>
+
+    <!-- Main section starts Here -->
+    <main class="container">
+        <section class="row row-cols-md-2 g-4">
+            <div>
+                <img class="img-fluid" src="assets/money.jpg" alt="" srcset="">
+            </div>
+            <div class="bg-light">
+                <div  class="text-center">
+                    <h5 class="fw-bolder">Income</h5>
+                    <div class="row mb-3">
+                      <label for="income" class="fw-bold col-sm-2 col-form-label">Income</label>
+                      <div class="col-sm-10">
+                        <input id="monthly-income" type="text" class="form-control" id="income">
+                      </div>
+                    </div>
+                    <h5 class="fw-bolder">Expenses</h5>
+                    <div class="row mb-3">
+                      <label for="food" class="fw-bold col-sm-2 col-form-label">Food</label>
+                      <div class="col-sm-10">
+                        <input id="food-cost" type="text" class="form-control" id="food">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label for="rent" class="fw-bold col-sm-2 col-form-label">Rent</label>
+                      <div class="col-sm-10">
+                        <input id="rent-cost" type="text" class="form-control" id="rent">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label for="clothes" class="fw-bold col-sm-2 col-form-label">Clothes</label>
+                      <div class="col-sm-10">
+                        <input id="cloths-cost" type="text" class="form-control" id="clothes">
+                      </div>
+                    </div>
+
+                    <!-- Erroe Message -->
+
+                    <div>
+                      <h1> <span id="error"></span> </h1>
+                    </div>
+
+                    <button id="calculate-btn" class="btn btn-lg btn-primary fw-bold">Calculate</button>
+                    <div class="my-2">
+                        <h5 class="my-3 fw-bold">Total Expense: <span id="total-expense"></span></h5>
+                        <h5 class="my-3 fw-bold" >Balance: <span id="balance"></span></h5>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="save" class="fw-bold col-sm-2 col-form-label">Save</label>
+                        <div class="col-sm-5">
+                          <input id="save" type="text" class="form-control">
+                        </div>
+                        <div class="col-sm-5 d-flex justify-content-around">
+                            <h4 class=" fw-bolder me-3">%</h4>
+                          <button id="save-amount" class="btn btn-primary w-75 fw-bold" >Save</button>
+                        </div>
+                      </div>
+                      <div>
+                        <h1> <span id="error1"></span> </h1>
+                      </div>
+                      
+                        <div class="my-2">
+                        <h5 class="my-3 fw-bold ">Saving Amount: <span id="withparcent-save-amount"></span></h5>
+                        <h5 class="my-3 fw-bold ">Remaining Balance: <span id="remaining-balance"></span></h5>
+                        
+                  </div>
+                </div>
+            </div>
+          </section>
+
+    </main>
+    <!-- Main section ends Here -->
+    <script src="functional-app.js"></script>
+</body>
+</html>
